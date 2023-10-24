@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>ANIME SPOT</title>
+   
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>ANIME SPOT</h1>
+  
+  <h1>LUFFY</h1>
+  <div class="image-box">
+    
+    <div class="card"><img src="jid.jpg"><p>LUFFY</p></div>
+    <div class="card"><img src="monkey.jpg"><p>LUFFY </p></0></div>
+    <div class="card"><img src="name.jpg"><p>luffy</p></div>
+    <div class="card"><img src="one.jpg"><p>luffy </p></div>
+  </div>
+  <h1>NETERO</h1>
+  <div class="image-box">
+    
+    <div class="card"><img src="netero1.jpg"><p>netero</p></div>
+    <div class="card"><img src="netero2.jpg"><p>netero</p></div>
+    <div class="card"><img src="netero3.jpg"><p>netero</p></div>
+    <div class="card"><img src="netero4.jpg"><p>netero</p></div>
+  </div>
+<style>
+  .image-box{
+    display: flex;
+    gap: 10px;
+    margin-top: 30px;
+  }
+  .card{
+    flex: 1;
+    overflow: visible;
+    -moz-box-shadow: black 2px 2px 2px 2px;
+    
+    position: relative;
+    display: inline-block;
+    height: 300px;
+    width: 200px;
+    transition: flex 0.8s ease-in-out;
+  }
+  
+  .card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+    filter: grayscale(1);
+  }
+  .card:hover{
+    flex: 5;
+  }
+  .card:hover img{
+    filter: none;
+  }
+  p{
+    position: absolute;
+    top: 200px;
+    left:13px;
+    opacity: 0;
+    transition: opacity 1s;
+    box-shadow: rgba(120,203,12,20.20);
+    color: #288;
+    filter: brightness(200%);
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.1cm;
+  }
+  .card:hover>p{
+    opacity: 1;
+    text-align: center;
+  }
+  h1{
+    text-align: center;
+    background: url(jid.jpg);
+    -webkit-background-clip:text;
+    color: transparent;
+    letter-spacing: 0.1cm;
+    filter: brightness(200%);
+  }
+  body{
+    font-family: Arial,Sans-Serif;
+    background: url(ping.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+  }
+</style>
+</body>
